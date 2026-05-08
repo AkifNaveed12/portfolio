@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Akif Naveed — AI Systems & Software Engineering</title>
+  <meta name="description" content="Muhammad Akif Naveed — Software Engineering student at COMSATS University. Building intelligent systems, AI applications, and research-oriented software beyond coursework." />
+  <meta name="keywords" content="Muhammad Akif Naveed, AI Engineering, Software Engineering, COMSATS, Machine Learning, Intelligent Systems" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MAN<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#timeline">Journey</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-image-wrap">
+        <!--
+          ╔══════════════════════════════════════════════════════════╗
+          ║  PROFILE IMAGE — Replace src below with your image path  ║
+          ║  Example: src="assets/images/profile.jpg"               ║
+          ╚══════════════════════════════════════════════════════════╝
+        -->
+        <img src="assets/images/profile.png" alt="Muhammad Akif Naveed" class="hero-photo" id="heroPhoto" onerror="this.style.display='none';document.getElementById('heroInitials').style.display='flex'" />
+        <div class="hero-initials" id="heroInitials">MAN</div>
+        <div class="hero-photo-ring"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-label">Muhammad Akif Naveed</p>
+        <h1 class="hero-heading">
+          Software Engineering<br />
+          <span class="hero-accent">&times;</span>
+          <span class="hero-typed" id="typedText"></span>
+          <span class="hero-cursor">|</span>
+        </h1>
+        <p class="hero-sub">
+          Building intelligent systems, AI applications, and research-oriented
+          software at COMSATS University Islamabad — and far beyond it.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <!--
+            ╔══════════════════════════════════════════════════════════════════╗
+            ║  RESUME PDF — Replace href with path to your resume PDF file    ║
+            ║  Example: href="assets/resume/Muhammad_Akif_Naveed_Resume.pdf"  ║
+            ╚══════════════════════════════════════════════════════════════════╝
+          -->
+          <a href="assets/resume/Muhammad_Akif_Naveed_Resume.pdf" class="btn btn-outline" download>Download CV</a>
+          <a href="#contact" class="btn btn-ghost">Contact</a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge">AI Engineering</span>
+          <span class="badge">Intelligent Systems</span>
+          <span class="badge">Research Assistance</span>
+          <span class="badge">Hackathons</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <h2 class="section-heading">Not just studying software.<br /><em>Engineering intelligence.</em></h2>
+          <p>
+            I'm a Software Engineering student at COMSATS University Islamabad, Wah Campus — currently in my fourth semester and
+            already deep into territories most students only read about: AI system development, ensemble deep learning research,
+            legal-tech hackathons, and intelligent automation workflows.
+          </p>
+          <p>
+            My technical path didn't stop at lectures. I enrolled in a six-month AI Engineering program at PNY Trainings,
+            participated in the HEC GenAI Cohort 2, placed 4th at HackData V1, and currently assist in active medical
+            imaging research involving CNN, ResNet, and EfficientNet ensemble architectures.
+          </p>
+          <p>
+            What drives me is the intersection of structured engineering and intelligent systems — building things that
+            think, learn, and solve real problems. I'm applying for the COMSATS-METU exchange program to expand that
+            perspective internationally.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">GitHub Repos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4th</span>
+              <span class="stat-label">HackData V1</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Semesters of Growth</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Programming</h4>
+              <div class="skill-tags">
+                <span>Python</span><span>C++</span><span>Java</span><span>JavaScript</span><span>HTML/CSS</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>AI / ML</h4>
+              <div class="skill-tags">
+                <span>Deep Learning</span><span>CNNs</span><span>ResNet</span><span>EfficientNet</span>
+                <span>Transfer Learning</span><span>Ensemble Models</span><span>NLP</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Systems & Tools</h4>
+              <div class="skill-tags">
+                <span>Qt Framework</span><span>Java Swing</span><span>Tkinter</span>
+                <span>TCP Sockets</span><span>SQLite</span><span>MySQL</span><span>Git/GitHub</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>APIs & Deployment</h4>
+              <div class="skill-tags">
+                <span>Streamlit</span><span>Groq API</span><span>Supabase</span>
+                <span>Vercel</span><span>JSON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-heading reveal">Selected Work<br /><em>&amp; Technical Systems</em></h2>
+      <div class="projects-grid">
+
+        <!-- NOVA AI -->
+        <div class="project-card featured reveal" data-delay="0">
+          <div class="project-card-top">
+            <div class="project-number">01</div>
+            <div class="project-tag">AI · NLP · Automation</div>
+          </div>
+          <h3>NOVA AI</h3>
+          <p>Voice-controlled intelligent personal assistant with NLP-based intent recognition, gesture control, real-time automation, and persistent memory backend. Explores human-computer interaction at the intersection of voice and intelligent reasoning.</p>
+          <div class="project-tech">
+            <span>Python</span><span>NLP</span><span>Voice Processing</span><span>Automation</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AkifNaveed12/NOVA-AI" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- Evidentia.pk -->
+        <div class="project-card featured reveal" data-delay="100">
+          <div class="project-card-top">
+            <div class="project-number">02</div>
+            <div class="project-tag">Hackathon · Legal-Tech · AI</div>
+          </div>
+          <h3>Evidentia.pk</h3>
+          <p>AI-powered digital evidence sealing and analysis platform built for HEC GenAI Cohort 2 Hackathon (72-hour sprint). Features time-stamped evidence sealing, scene analysis, image-to-text inference via Groq API, and Supabase backend — deployed live.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Streamlit</span><span>Groq API</span><span>Supabase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AkifNaveed12/Evidentia.pk" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            <a href="https://evidentiapkgit-cf5fzsjj22b6f36j5u5c2f.streamlit.app/" target="_blank" rel="noopener" class="project-link project-link-live">Live App ↗</a>
+          </div>
+        </div>
+
+        <!-- Waris Nama AI -->
+        <div class="project-card reveal" data-delay="0">
+          <div class="project-card-top">
+            <div class="project-number">03</div>
+            <div class="project-tag">Hackathon · 4th Place · AI</div>
+          </div>
+          <h3>Waris Nama AI</h3>
+          <p>AI-assisted platform developed during HackData V1, securing 4th position. Focused on real-world intelligent automation and collaborative AI system design under competitive pressure. Deployed on Vercel.</p>
+          <div class="project-tech">
+            <span>AI Integration</span><span>Rapid Prototyping</span><span>Vercel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AkifNaveed12/WarisNama---AI" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            <a href="https://warisnama-ai-frontend.vercel.app/" target="_blank" rel="noopener" class="project-link project-link-live">Live App ↗</a>
+          </div>
+        </div>
+
+        <!-- CureOne -->
+        <div class="project-card reveal" data-delay="100">
+          <div class="project-card-top">
+            <div class="project-number">04</div>
+            <div class="project-tag">Systems · Healthcare · OOP</div>
+          </div>
+          <h3>CureOne</h3>
+          <p>Unified healthcare management system with pharmacy inventory, appointment scheduling, patient records, and authentication with billing. Built with full OOP architecture, MySQL database, and Java Swing GUI — demonstrating production-level system design thinking.</p>
+          <div class="project-tech">
+            <span>Java</span><span>Java Swing</span><span>MySQL</span><span>OOP</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AkifNaveed12/CureOne---Unified_Healthcare_Management_System." target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- AlgoVision -->
+        <div class="project-card reveal" data-delay="0">
+          <div class="project-card-top">
+            <div class="project-number">05</div>
+            <div class="project-tag">EdTech · AI · Visualization</div>
+          </div>
+          <h3>AlgoVision</h3>
+          <p>AI-powered data structures learning and analysis system with intelligent visualization, algorithm comparison, and AI-assisted educational guidance. Bridges conceptual understanding and practical execution through interactive systems.</p>
+          <div class="project-tech">
+            <span>Python</span><span>AI Integration</span><span>Visualization</span><span>Web Frontend</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AkifNaveed12/AlgoVision--AI-Powered-Data-Structures-Learning-and-Analysis-System" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- CDSIAS -->
+        <div class="project-card reveal" data-delay="100">
+          <div class="project-card-top">
+            <div class="project-number">06</div>
+            <div class="project-tag">C++ · Qt · Systems · Data Structures</div>
+          </div>
+          <h3>CDSIAS</h3>
+          <p>Comprehensive Data Structure Implementation & Analysis System — a modular C++ desktop application implementing all linear/non-linear data structures and algorithms from scratch (no STL). Includes real-time performance analytics, Qt GUI, and SQLite reporting.</p>
+          <div class="project-tech">
+            <span>C++</span><span>Qt Framework</span><span>SQLite</span><span>Algorithm Analysis</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AkifNaveed12/complete-data-structures-implementation-analysis-system" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- Hit & Check -->
+        <div class="project-card reveal" data-delay="0">
+          <div class="project-card-top">
+            <div class="project-number">07</div>
+            <div class="project-tag">Cybersecurity · AI · Streamlit</div>
+          </div>
+          <h3>Hit &amp; Check</h3>
+          <p>Cybersecurity educational application simulating brute-force and dictionary attacks on ATM password systems. Features AI-generated security reports via Groq LLM, an AI security chatbot, and automated email reporting — built with Streamlit.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Streamlit</span><span>Groq LLM</span><span>Cybersecurity</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AkifNaveed12/hit-and-check" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- Network CMD -->
+        <div class="project-card reveal" data-delay="100">
+          <div class="project-card-top">
+            <div class="project-number">08</div>
+            <div class="project-tag">Networking · TCP · Python</div>
+          </div>
+          <h3>Network CMD Panel</h3>
+          <p>Network-controlled custom command-line panel using TCP socket programming. Client-server architecture with JSON message framing, multi-threaded client handling, graphical Tkinter interface, and structured command execution — built for Computer Networks coursework.</p>
+          <div class="project-tech">
+            <span>Python</span><span>TCP Sockets</span><span>Tkinter</span><span>Multi-threading</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hamzaali-712/Network-Controlled-Custom-CMD-Panel-Using-TCP-Sockets" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-more reveal">
+        <p>More on GitHub</p>
+        <div class="more-repos">
+          <a href="https://github.com/AkifNaveed12/credit-card-fraud-detection" target="_blank">Credit Card Fraud Detection</a>
+          <a href="https://github.com/AkifNaveed12/face-recognition-attendance-system" target="_blank">Face Recognition Attendance</a>
+          <a href="https://github.com/AkifNaveed12/customer-churn-pridiction-system" target="_blank">Customer Churn Prediction</a>
+          <a href="https://github.com/AkifNaveed12/netflix-content-strategy-eda" target="_blank">Netflix EDA Case Study</a>
+          <a href="https://github.com/AkifNaveed12/Animal-vs-Human-Face-Recognition-System" target="_blank">Animal vs Human Recognition</a>
+          <a href="https://github.com/AkifNaveed12/Excel-Ecommerce-BI-Project" target="_blank">Ecommerce BI Project</a>
+        </div>
+        <a href="https://github.com/AkifNaveed12" target="_blank" class="btn btn-outline">View GitHub Profile →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH ========== -->
+  <section class="research section" id="research">
+    <div class="container">
+      <div class="section-label">Research</div>
+      <h2 class="section-heading reveal">Active Research<br /><em>Assistance</em></h2>
+      <div class="research-card reveal">
+        <div class="research-card-left">
+          <div class="research-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M32 12 Q44 20 44 32 Q44 44 32 52 Q20 44 20 32 Q20 20 32 12Z" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="12" y1="32" x2="52" y2="32" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="32" cy="32" r="4" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="research-status">
+            <div class="status-dot"></div>
+            <span>Ongoing</span>
+          </div>
+        </div>
+        <div class="research-card-right">
+          <h3>Brain Tumor Classification Using Deep Learning &amp; Ensemble Learning on MRI Images</h3>
+          <p>
+            Assisting in an active research project developing a hybrid ensemble framework combining CNN, ResNet50, and EfficientNet architectures 
+            with CBAM attention mechanisms for accurate brain tumor classification from MRI scans. The goal is higher classification accuracy, 
+            improved validation stability, and enhanced diagnostic reliability compared to individual model approaches.
+          </p>
+          <div class="research-tech-row">
+            <div class="research-tech-group">
+              <span class="research-tech-label">Architectures</span>
+              <div class="research-tech-tags">
+                <span>CNN</span><span>ResNet50</span><span>EfficientNet</span><span>CBAM Attention</span>
+              </div>
+            </div>
+            <div class="research-tech-group">
+              <span class="research-tech-label">Concepts</span>
+              <div class="research-tech-tags">
+                <span>Transfer Learning</span><span>Ensemble Learning</span><span>Medical Imaging</span><span>MRI Classification</span>
+              </div>
+            </div>
+            <div class="research-tech-group">
+              <span class="research-tech-label">Contributions</span>
+              <div class="research-tech-tags">
+                <span>Model Experimentation</span><span>Performance Analysis</span><span>Optimization Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIMELINE ========== -->
+  <section class="timeline-section section" id="timeline">
+    <div class="container">
+      <div class="section-label">Journey</div>
+      <h2 class="section-heading reveal">Semester-by-Semester<br /><em>Technical Growth</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span>S1</span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-meta">Semester 1 · Fall 2024</div>
+            <h3>Programming Foundations</h3>
+            <p>Learned computational thinking, logic building, and modular development in C++. Contributed to a team Financial Management System covering tax management, asset prediction, and purchase guidance modules.</p>
+            <div class="timeline-tags">
+              <span>C++</span><span>Problem Solving</span><span>Team Collaboration</span><span>System Design Basics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span>S2</span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-meta">Semester 2 · Spring 2025</div>
+            <h3>Applied Systems Development</h3>
+            <p>Expanded implementation skills toward larger structured systems. Focused on practical software development workflows, structured programming patterns, and beginning independent AI exploration beyond coursework.</p>
+            <div class="timeline-tags">
+              <span>Structured Programming</span><span>Systems Thinking</span><span>Independent Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span>S3</span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-meta">Semester 3 · Fall 2025</div>
+            <h3>OOP, Databases &amp; Networking</h3>
+            <p>Transitioned to advanced software engineering with OOP, database integration, and computer networking. Built CureOne (Java + MySQL + Swing) and the Network CMD Panel (Python TCP Sockets). Enrolled in PNY AI Engineering program.</p>
+            <div class="timeline-tags">
+              <span>Java</span><span>MySQL</span><span>TCP Sockets</span><span>OOP</span><span>System Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-active reveal">
+          <div class="timeline-marker">
+            <span>S4</span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-meta">Semester 4 · Spring 2026 · Current</div>
+            <h3>AI Systems, Research &amp; Advanced Engineering</h3>
+            <p>Active focus on AI engineering, intelligent systems, cybersecurity, and data structure analysis. Building NOVA AI, Evidentia.pk, AlgoVision, CDSIAS. Assisting in active brain tumor MRI classification research. Competing in HEC GenAI Cohort 2 and HackData V1 hackathons.</p>
+            <div class="timeline-tags">
+              <span>AI Engineering</span><span>Deep Learning</span><span>NLP</span><span>Cybersecurity</span><span>Research Assistance</span><span>Hackathons</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="certs-section section" id="certifications">
+    <div class="container">
+      <div class="section-label">Certifications</div>
+      <h2 class="section-heading reveal">Learning Beyond<br /><em>the Classroom</em></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal" data-delay="0">
+          <div class="cert-header">
+            <div class="cert-icon">AI</div>
+            <div class="cert-badge-status">Completed</div>
+          </div>
+          <h3>AI Engineering Program</h3>
+          <p class="cert-issuer">PNY Trainings · 6 Months</p>
+          <p class="cert-desc">Practical AI engineering workflows, machine learning, deep learning concepts, Streamlit, API integration, and intelligent application deployment. Instructed by Sir Mahad.</p>
+          <div class="cert-tags">
+            <span>Python</span><span>ML</span><span>Deep Learning</span><span>Streamlit</span><span>APIs</span>
+          </div>
+          <!--
+            ╔══════════════════════════════════════════════════════════════════════╗
+            ║  PNY AI CERTIFICATE IMAGE — Replace src with your certificate image  ║
+            ║  Example: src="assets/certificates/pny_ai_engineering.jpg"          ║
+            ╚══════════════════════════════════════════════════════════════════════╝
+          -->
+          <button class="cert-preview-btn" onclick="openModal('assets/certificates/pny_ai_engineering.png', 'AI Engineering Program — PNY Trainings')">View Certificate ↗</button>
+        </div>
+
+        <div class="cert-card reveal" data-delay="150">
+          <div class="cert-header">
+            <div class="cert-icon">HEC</div>
+            <div class="cert-badge-status">Completed</div>
+          </div>
+          <h3>HEC GenAI Cohort 2</h3>
+          <p class="cert-issuer">Higher Education Commission Pakistan</p>
+          <p class="cert-desc">Generative AI workflows, AI-assisted system design, and practical AI implementation through collaborative hackathon-based development. Culminated in building Evidentia.pk.</p>
+          <div class="cert-tags">
+            <span>Generative AI</span><span>LLMs</span><span>AI Workflows</span><span>Hackathon</span>
+          </div>
+          <!--
+            ╔══════════════════════════════════════════════════════════════════════════╗
+            ║  HEC GENAI CERTIFICATE IMAGE — Replace src with your certificate image   ║
+            ║  Example: src="assets/certificates/hec_genai_cohort2.jpg"               ║
+            ╚══════════════════════════════════════════════════════════════════════════╝
+          -->
+          <button class="cert-preview-btn" onclick="openModal('assets/certificates/hec_genai_cohort2.png', 'HEC GenAI Cohort 2')">View Certificate ↗</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section class="achievements-section section" id="achievements">
+    <div class="container">
+      <div class="section-label">Achievements</div>
+      <h2 class="section-heading reveal">Beyond the<br /><em>Curriculum</em></h2>
+      <div class="achievements-grid">
+
+        <div class="achievement-card reveal" data-delay="0">
+          <!--
+            ╔══════════════════════════════════════════════════════════════════════╗
+            ║  HACKDATA ACHIEVEMENT IMAGE — Replace src if you have a photo/cert   ║
+            ║  Example: src="assets/achievements/hackdata_4th.png"                ║
+            ╚══════════════════════════════════════════════════════════════════════╝
+          -->
+          <div class="achievement-icon trophy">🏆</div>
+          <div class="achievement-rank">4th Position</div>
+          <h4>HackData V1</h4>
+          <p>Competed and secured 4th place with the Waris Nama AI project — an intelligent AI-assisted system developed under competitive hackathon conditions.</p>
+          <button class="achievement-img-btn" onclick="openModal('assets/achievements/hackdata_4th.png', 'HackData V1 — 4th Position')">View Photo ↗</button>
+        </div>
+
+        <div class="achievement-card reveal" data-delay="100">
+          <!--
+            ╔══════════════════════════════════════════════════════════════════════╗
+            ║  BEST STUDENT AWARD IMAGE — Replace src with your award photo/cert  ║
+            ║  Example: src="assets/achievements/best_student_gdg.jpg"            ║
+            ╚══════════════════════════════════════════════════════════════════════╝
+          -->
+          <div class="achievement-icon star">⭐</div>
+          <div class="achievement-rank">Best Student Award</div>
+          <h4>GDG On Campus — Data Science &amp; AI Club</h4>
+          <p>Recognized as Best Student in the Data Science & AI Club at GDG On Campus, COMSATS University Islamabad, Fall 2025.</p>
+          <button class="achievement-img-btn" onclick="openModal('assets/achievements/best_student_gdg.png', 'Best Student — GDG Data Science & AI Club')">View Award ↗</button>
+        </div>
+
+        <div class="achievement-card reveal" data-delay="200">
+          <div class="achievement-icon code">⚡</div>
+          <div class="achievement-rank">14th Position</div>
+          <h4>Tech Fest 2026 — Speed Coding</h4>
+          <p>Competed in the Speed Coding Competition at Tech Fest 2026, COMSATS University Islamabad — demonstrating algorithmic speed and problem-solving under pressure.</p>
+        </div>
+
+      </div>
+
+      <!-- Leadership & Community -->
+      <div class="leadership-grid reveal">
+        <h3>Leadership &amp; Community</h3>
+        <div class="leadership-cards">
+          <div class="leadership-card">
+            <div class="leadership-tag">Ambassador</div>
+            <h4>ROBOFEIST — HI-TECH University Islamabad</h4>
+            <p>Student ambassador representing COMSATS and promoting event participation.</p>
+          </div>
+          <div class="leadership-card">
+            <div class="leadership-tag">Ambassador</div>
+            <h4>CODEX 3.0 — NUML University Mianwali</h4>
+            <p>Supported outreach and student engagement for the technical event.</p>
+          </div>
+          <div class="leadership-card">
+            <div class="leadership-tag">Organizer</div>
+            <h4>Visio Spark 2025 — COMSATS Wah</h4>
+            <p>Assisted in event management, coordination, and execution workflows.</p>
+            <!--
+              ╔════════════════════════════════════════════════════════════════════════╗
+              ║  VISIO SPARK CERTIFICATE — Replace src with your certificate image     ║
+              ║  Example: src="assets/achievements/visio_spark_2025.jpg"              ║
+              ╚════════════════════════════════════════════════════════════════════════╝
+            -->
+            <button class="achievement-img-btn" style="margin-top:0.75rem" onclick="openModal('assets/achievements/visio_spark_2025.png', 'Visio Spark 2025 — Event Management Certificate')">View Certificate ↗</button>
+          </div>
+          <div class="leadership-card">
+            <div class="leadership-tag">Mentor</div>
+            <h4>Peer Guidance — Hackathons &amp; AI Learning</h4>
+            <p>Conducted mentorship sessions for juniors on hackathon strategy, AI learning paths, and technical career development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-heading reveal">Let's Connect<br /><em>&amp; Collaborate</em></h2>
+      <p class="contact-sub reveal">Open to research collaborations, exchange opportunities, technical discussions, and building intelligent systems together.</p>
+      <div class="contact-grid reveal">
+        <a href="mailto:hello.akifnaveed@gmail.com" class="contact-card" target="_blank" rel="noopener">
+          <div class="contact-icon">✉</div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">hello.akifnaveed@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/akif-naveed-malik30" class="contact-card" target="_blank" rel="noopener">
+          <div class="contact-icon">in</div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">akif-naveed-malik30</span>
+        </a>
+        <a href="https://github.com/AkifNaveed12" class="contact-card" target="_blank" rel="noopener">
+          <div class="contact-icon">GH</div>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">AkifNaveed12</span>
+        </a>
+        <a href="https://wa.me/923010040014" class="contact-card" target="_blank" rel="noopener">
+          <div class="contact-icon">WA</div>
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+92 301 004 0014</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name">Muhammad Akif Naveed</span>
+        <span class="footer-copy">Software Engineering · COMSATS Wah · 2024–present</span>
+        <a href="https://github.com/AkifNaveed12" class="footer-gh" target="_blank">github.com/AkifNaveed12</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODAL ========== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <p class="modal-title" id="modalTitle"></p>
+      <img id="modalImg" src="" alt="Certificate / Achievement" class="modal-img" />
+      <p class="modal-placeholder" id="modalPlaceholder" style="display:none">
+        📁 Image not found — please add the file at the path shown in the HTML comments.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

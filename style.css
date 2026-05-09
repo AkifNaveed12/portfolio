@@ -812,7 +812,7 @@ body {
 }
 .cert-issuer { font-size: 0.72rem; color: var(--accent); margin-bottom: 0.75rem; letter-spacing: 0.03em; }
 .cert-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 1.2rem; }
-.cert-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1.5rem; flex: 1; }
+.cert-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1.5rem; align-content: flex-start; }
 .cert-tags span {
   font-size: 0.65rem;
   color: var(--text-dim);
@@ -820,6 +820,7 @@ body {
   border: 1px solid var(--border);
   padding: 0.2rem 0.6rem;
   border-radius: 50px;
+  white-space: nowrap;
 }
 .cert-preview-btn {
   align-self: flex-start;
@@ -1121,4 +1122,176 @@ body {
   .about-stats { gap: 1.5rem; }
   .hero-cta { flex-direction: column; align-items: center; }
   .hero-cta .btn { width: 100%; justify-content: center; }
+}
+
+
+/* ===== RESEARCH REFERENCE BLOCK ===== */
+.research-reference {
+  margin-top: 1.8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.2rem;
+}
+
+.research-ref-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.65rem;
+  font-family: var(--font-body);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.85rem;
+}
+.research-ref-icon { font-size: 0.8rem; }
+
+.research-ref-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+}
+
+.research-ref-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.research-ref-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.research-ref-affil {
+  font-size: 0.72rem;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.research-ref-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.73rem;
+  font-family: var(--font-body);
+  color: var(--accent);
+  text-decoration: none;
+  background: var(--accent-glow);
+  border: 1px solid rgba(91,139,247,0.25);
+  padding: 0.45rem 0.9rem;
+  border-radius: 50px;
+  transition: var(--transition);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.research-ref-email:hover {
+  background: rgba(91,139,247,0.2);
+  box-shadow: 0 0 14px var(--accent-glow);
+  transform: translateY(-1px);
+}
+.research-ref-email-icon { font-style: normal; }
+
+/* ===== CREDENTIAL VERIFY BUTTON (green — Credsverse/Certifier) ===== */
+.cert-verify-cred {
+  background: #166534 !important;
+  border-color: rgba(22,101,52,0.6) !important;
+  color: #bbf7d0 !important;
+}
+.cert-verify-cred:hover {
+  background: #15803d !important;
+  box-shadow: 0 0 16px rgba(22,163,74,0.3) !important;
+}
+.cert-verify-cred-icon {
+  font-size: 0.75rem;
+  font-weight: 800;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4ade80;
+  color: #14532d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* Stack cert-actions buttons on small screens */
+@media (max-width: 480px) {
+  .cert-actions { gap: 0.6rem; }
+  .cert-verify-btn { font-size: 0.68rem; padding: 0.45rem 0.8rem; }
+  .research-ref-body { flex-direction: column; align-items: flex-start; }
+}
+.cert-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+/* LinkedIn verify button */
+.cert-verify-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  font-size: 0.73rem;
+  font-family: var(--font-body);
+  color: #fff;
+  background: #0a66c2;
+  border: 1px solid rgba(10,102,194,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.cert-verify-btn:hover {
+  background: #0958a8;
+  box-shadow: 0 0 16px rgba(10,102,194,0.35);
+  transform: translateY(-1px);
+}
+.cert-verify-li-icon {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.7rem;
+  background: #fff;
+  color: #0a66c2;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* PNY issuer note (no public verification system exists) */
+.cert-verify-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.85rem;
+}
+.cert-verify-icon {
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+.cert-verify-text {
+  font-size: 0.68rem;
+  font-family: var(--font-body);
+  color: var(--text-dim);
+  line-height: 1.6;
 }
